@@ -1,0 +1,190 @@
+    @font-face {
+        font-family: Myriad Pro;
+        src: local('MyriadPro'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+    }
+
+    @font-face {
+        font-family: Roboto Regular;
+        src: local('RobotoRegular'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Myriad Pro;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        background: #BCBCBC;
+        min-height: 100%;
+    }
+
+    .principal-container-tag {
+        position: absolute;
+        width: 1368px;
+        min-height: 100%;
+        background: #FAFAFA;
+
+    }
+
+    .conteiner-allnews {
+        position: relative;
+        left: 365px;
+        width: calc(100% - 365px);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteiner-groupnews {
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 24px;
+        max-width: 900px;
+        margin-bottom: 24px;
+    }
+
+    .conteiner-groupnews .info-date-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        margin-top: 15px;
+    }
+
+    .conteiner-groupnews .info-date-container span {
+        margin-left: 10px;
+        font-family: Roboto Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #8c8c8c;
+    }
+
+    .conteiner-groupnews .new {
+        padding: 16px 16px 66px 16px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+        position: relative;
+    }
+
+    .new:hover {
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, -50px -45px 14px -11px rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+
+    .conteiner-groupnews .new:first-child {
+        padding: 16px;
+        height: 480px;
+    }
+
+    .conteiner-groupnews .logo-tema-new {
+        width: 20px;
+        height: 20px;
+    }
+
+    .conteiner-groupnews .new span {
+        font-family: Roboto Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .conteiner-groupnews .img-new img {
+        width: 100%;
+        height: 260px;
+    }
+
+    /* Special styles */
+
+    .conteiner-groupnews .new:first-child {
+        grid-column: 1 / span 2;
+        position: relative;
+        font-family: Roboto Regular;
+    }
+
+    .news-container .conteiner-groupnews:nth-child(even) .new:first-child {
+        grid-column: 2 / span 2;
+        position: relative;
+        font-family: Roboto Regular;
+    }
+
+    .news-container .conteiner-groupnews:nth-child(even) .new:nth-child(2) {
+        grid-row: 1 / span 1;
+    }
+
+    .conteiner-groupnews .new:first-child .img-new img {
+        height: 100%;
+        position: relative;
+    }
+
+    .conteiner-groupnews .new:first-child .info-date-container {
+        justify-content: start;
+        align-items: center;
+        top: 15px;
+        left: 15px;
+        width: 100px;
+        color: white;
+        margin-left: 15px;
+    }
+
+    .conteiner-groupnews .new:first-child .info-date-container span {
+        color: white;
+    }
+
+    .conteiner-groupnews .new:first-child .textnew-p a {
+        position: absolute;
+        bottom: 0;
+        margin: 0 16px 32px 16px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 24px;
+    }
+
+    .conteiner-groupnews .textnew-p {
+        margin-top: 45px;
+        font-family: Myriad Pro;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+
+    .conteiner-groupnews .textnew-p a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .title-allnews {
+        font-family: Myriad Pro;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        color: #154385;
+        margin: 24px 0;
+    }

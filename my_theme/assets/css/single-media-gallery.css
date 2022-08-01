@@ -1,0 +1,214 @@
+    @font-face {
+        font-family: Myriad Pro;
+        src: local('MyriadPro'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+    }
+
+    @font-face {
+        font-family: Roboto Regular;
+        src: local('RobotoRegular'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Myriad Pro;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        background: #BCBCBC;
+        min-height: 100%;
+    }
+
+    .principal-container-gallery {
+        position: ABSOLUTE;
+        width: 1368px;
+        min-height: 100%;
+        background: #FAFAFA;
+    }
+
+    .container-gallery {
+        position: relative;
+        width: 1035px;
+        min-height: 100vh;
+        left: 333px;
+        top: 30px;
+        background: #FAFAFA;
+        padding: 32px;
+    }
+
+    .title-gallery {
+        font-size: 36px;
+        color: rgba(21, 67, 133, 1);
+        font-family: Myriad Pro;
+        margin-bottom: 32px;
+    }
+
+    .title-photos {
+        color: rgba(21, 67, 133, 1);
+        font-family: Myriad Pro;
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .photos-gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+        margin-bottom: 32px;
+    }
+
+    .img-gallery {
+        width: 321px;
+        height: 220px;
+    }
+
+    .title-video {
+        color: rgba(21, 67, 133, 1);
+        font-family: Myriad Pro;
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .video-gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+        margin-bottom: 32px;
+    }
+
+    .video-gallery {
+        width: 321px;
+        height: 220px;
+    }
+
+
+
+    /* testing */
+
+
+    .gallery-image {
+        width: 30%;
+        width: 321px;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 1s;
+    }
+
+    /* popup */
+
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 80%;
+        max-width: 1035px;
+        height: 90vh;
+        max-height: 800px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5000;
+        overflow: hidden;
+        transition: 0.01s;
+        opacity: 0;
+    }
+
+    .popup.active {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    .popup.active .close-btn,
+    .popup.active .image-name,
+    .popup.active .index,
+    .popup.active .large-image,
+    .popup.active .arrow-btn {
+        opacity: 1;
+        transition: opacity .5s;
+        transition-delay: 1s;
+    }
+
+    .top-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: rgba(21, 67, 133, 1);
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 300;
+    }
+
+    .image-name {
+        opacity: 0;
+    }
+
+    .close-btn {
+        opacity: 0;
+        position: absolute;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 32px;
+    }
+
+    .arrow-btn {
+        position: absolute;
+        font-size: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: white;
+        background: transparent;
+        border: none;
+    }
+
+    .left-arrow {
+        left: 15px;
+    }
+
+    .right-arrow {
+        right: 15px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+
+    .index {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 80px;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.4);
+        opacity: 0;
+    }
+
+    .large-image {
+        margin-top: 5%;
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+        overflow: auto;
+        opacity: 0;
+    }

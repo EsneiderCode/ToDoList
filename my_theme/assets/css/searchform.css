@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Myriad Pro;
+    src: local('MyriadPro'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+}
+
+@font-face {
+    font-family: Roboto Regular;
+    src: local('RobotoRegular'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+}
+
+.form-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+    /* черный шрифт */
+    ;
+    position: absolute;
+    font-size: 14px;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 3000;
+    top: 3px;
+}
+
+.search {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 10px;
+}
+
+.btn-mig {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mig {
+    margin-right: 10px;
+    width: 11px;
+    height: 11px;
+}
+
+.search_input {
+    width: 450px;
+    outline: none;
+    border: none;
+    font-family: Roboto Regular;
+}
+
+.right-options-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lang {
+    position: relative;
+    margin-right: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lang img {
+    width: 25px;
+    height: 15px;
+}
+
+.visual-help-container {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.eye {
+    width: 32px;
+    height: 24px;
+}
+
+select option {
+    font-family: Robot Regular;
+    font-size: 16px;
+    outline: none;
+}

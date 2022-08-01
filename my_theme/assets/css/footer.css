@@ -1,0 +1,128 @@
+    @font-face {
+        font-family: Myriad Pro;
+        src: local('MyriadPro'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/MYRIADPRO-REGULAR.woff") format('truetype');
+    }
+
+    @font-face {
+        font-family: Roboto Regular;
+        src: local('RobotoRegular'), url("http://localhost/wordpress/wp-content/themes/my_theme/fonts/Roboto-Regular.ttf") format('truetype');
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Myriad Pro;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        background: #BCBCBC;
+        min-height: 100%;
+    }
+
+    .footer-container {
+        width: auto;
+        height: auto;
+        padding: 32px;
+        position: relative;
+        bottom: 0;
+        margin-left: 333px;
+        background: #EEEEEE;
+        font-family: Roboto Regular;
+        font-size: 16px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 30px 0;
+    }
+
+    .footer-contact-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+    }
+
+    .footer-credits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .footer-credits-company {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px
+    }
+
+    .footer-social-network {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 220px;
+    }
+
+    .footer-social-network a {
+        padding: 0 10px;
+        font-size: 12px;
+
+    }
+
+    .footer-contact-address-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    hr {
+        border: 1px solid rgba(10, 65, 120, 0.3);
+        width: 100%;
+    }
+
+    .footer-web-dev a {
+        color: rgba(21, 67, 133, 1);
+        text-decoration: none;
+    }
+
+    .sideapp-calendar {
+        color: #154385;
+    }
+
+    img {
+        height: 80px;
+    }
+
+    .footer-social-network a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .teleg-icon {
+        margin-right: 10px;
+    }
+
+    .icon-ictib {
+        width: 113px;
+        height: 54px;
+    }
+
+    .footer-contact-map {
+        color: rgba(21, 67, 133, 1);
+        text-decoration: none;
+    }
